@@ -8,9 +8,8 @@
 require "faker"
 
 10.times do
-  Page.create(
+  Note.create(
     title: Faker::Hacker.abbreviation,
-    body: Faker::Hacker.say_something_smart,
-    author: Faker::Name.name,
+    description: Faker::Hacker.say_something_smart,
   )
 end
