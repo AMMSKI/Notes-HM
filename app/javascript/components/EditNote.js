@@ -2,9 +2,9 @@ import React from "react"
 
 const EditNote = (props) => {
   return (
-    <div>
-      <h1>Form</h1>
-      <a href="/notes">back</a>
+    <div style={{ textAlign: "center", backgroundColor: "lightblue", border: "7px solid", padding: "40px", margin: "40px" }}>
+      <h1>Edit Note</h1>
+      <a style={{textDecoration: "none"}} href="/notes">Back</a>
       <form action={`/notes/${props.note.id}`} method="post">
         <input type="hidden" name="_method" value="patch" />
         <p>Title</p>

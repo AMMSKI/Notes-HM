@@ -2,9 +2,9 @@ import React from "react"
 
 const NewNote = () => {
   return (
-    <div>
-      <h1>Form</h1>
-      <a href="/notes">Back</a>
+    <div style={{ textAlign: "center", backgroundColor: "lightblue", border: "7px solid", padding: "40px", margin: "40px" }}>
+      <h1>Add Note</h1>
+      <a style={{textDecoration: "none"}} href="/notes">Back</a>
       <form action="/notes" method="post">
         <p>Title</p>
         <input name="note[title]"/>
