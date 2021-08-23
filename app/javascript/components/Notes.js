@@ -9,6 +9,7 @@ const Notes = (props) => {
             <h6>{note.description}</h6>
             <a href={`/notes/${note.id}`}>Show</a>
             <a href={`/notes/${note.id}/edit`}>Edit</a>
+            <a href={`/notes/${note.id}`} data-method="delete">Delete</a>
         </div>
       )
     })
